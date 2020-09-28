@@ -1,0 +1,10 @@
+html {
+    font-size: 62.5%; 
+    box-sizing: border-box;
+}
+body {
+    font: 1.6rem;
+    font-family: 'Rock Salt', cursive;
+    height: 100vh;
+    margin: 0;
+}

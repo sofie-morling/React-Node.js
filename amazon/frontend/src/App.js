@@ -1,6 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
+import data from './data';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
 import './App.css';
+import HomeScreen from './Screens/HomeScreen';
+import ProductScreen from './Screens/ProductScreen';
 
 function App() {
 
@@ -11,13 +14,14 @@ function App() {
     document.querySelector(".sidebar").classList.remove("open");
   }
   return (
+    <BrowserRouter>
     <div className="grid-container">
         <header className="header">
             <div className="brand">
                 <button onClick={openMenu}>
                     &#9776;
                 </button>
-                <a href="index.html">Coctail Shop</a>
+                <Link to="/">Coctail Shop</Link>
             </div>
             <div className="header-links">
                 <a href="cart.html">Cart</a>
@@ -47,60 +51,16 @@ function App() {
         </aside>
         <main className="main">
             <div className="content">
-                <ul className="products">
-                    <li>
-                        <div className="product">
-                            <img className="product-image" src="/images/d1.jpg" alt="product"/>
-                            <div className="product-name">
-                                <a href="product.html">Pinja Colada</a>
-                                </div>
-                            <div className="product-price">30 coins</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="product">
-                            <img className="product-image" src="/images/d2.jpg" alt="product"/>
-                            <div className="product-name">
-                                <a href="product.html">Longisland Icetea</a>
-                                </div>
-                            <div className="product-price">68 coins</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="product">
-                            <img className="product-image" src="/images/d3.jpg" alt="product"/>
-                            <div className="product-name">
-                                <a href="product.html">Mai Thai</a>
-                                </div>
-                            <div className="product-price">27 coins</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="product">
-                            <img className="product-image" src="/images/d4.jpg" alt="product"/>
-                            <div className="product-name">
-                                <a href="product.html">Mohito</a>
-                                </div>
-                            <div className="product-price">55 coins</div>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="product">
-                            <img className="product-image" src="/images/d5.jpg" alt="product"/>
-                            <div className="product-name">
-                                <a href="product.html">Tequlia Sunrise</a>
-                                </div>
-                            <div className="product-price">10 coins</div>
-                        </div>
-                    </li>
-                    
-                </ul>
+              <Route path="/product/:id" component={ProductScreen} />
+              <Route path="/" exact={true} component={HomeScreen} />
+                
             </div>
         </main>
         <footer className="footer">
             All right reserved.
         </footer>
     </div>
+    </BrowserRouter>
   );
 }
 

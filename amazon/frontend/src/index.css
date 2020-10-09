@@ -4,7 +4,7 @@ html {
 }
 body {
   font: 1.6rem;
-  font-family: 'Rock Salt', cursive;
+  font-family: 'helvetica', cursive;
   height: 100vh;
   margin: 0;
 }
@@ -160,13 +160,14 @@ a:hover {
 .details-info ul, .details-action ul {
   list-style-type: none;
   padding: 1rem;
+  font-size: 1.3rem;
 }
 .details-info li, .details-action li {
   margin-bottom: 2rem;
 }
 .back-to-coctails {
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 .details-action {
   border: .1rem black solid;

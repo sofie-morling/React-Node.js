@@ -1,8 +1,12 @@
 import express from 'express';
 import data from './data';
 import dotenv from 'dotenv';
+import fileUpload from 'express-fileupload';
+import path from 'path';
+import productRoute from './routes/productRoute';
 import config from './config';
 import mongoose from 'mongoose';
+import bodyParser from'body-parser';
 import userRoute from './routes/userRoute';
 
 dotenv.config();
@@ -15,7 +19,7 @@ mongoose.connect(mongodbUrl, {
 }).catch(error => console.log(error.reason));
 
 const app = express();
-
+app.use(bodyParser.json());
 app.use("/api/users", userRoute);
 app.get("/api/products/:id", (req, res) => {
     const productId = req.params.id;

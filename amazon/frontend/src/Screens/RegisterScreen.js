@@ -8,7 +8,7 @@ function SigninScreen(props) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const userSignin = useSelector(state=>state.userSignin);
-    const { loding, userInfo, error } = userSignin;
+    const { loading, userInfo, error } = userSignin;
     const dispatch = useDispatch();
 
  
@@ -35,7 +35,7 @@ function SigninScreen(props) {
                     <h1>Sign In</h1>
                 </li>
                 <li>
-                    {loding && <div>Loading...</div>}
+                    {loading && <div>Loading...</div>}
                     {error && <div>{error}</div>}
                 </li>
                 <li>

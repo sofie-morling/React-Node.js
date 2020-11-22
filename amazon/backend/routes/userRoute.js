@@ -18,7 +18,7 @@ router.post('/signin', async (req, res) => {
             token: getToken(signinUser)
         })
     } else {
-        res.status(401).send({msg:'Invalid email or password.'});
+        res.status(401).send({message:'Invalid email or password!'});
     }
 })
 

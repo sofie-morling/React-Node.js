@@ -9,9 +9,6 @@ import SigninScreen from './screens/SigninScreen';
 
 function App() {
 
-    const userSignin = useSelector(state=>state.userSignin);
-    const {userInfo} = userSignin;
-
   const openMenu = () =>{
     document.querySelector(".sidebar").classList.add("open");
   }
@@ -30,11 +27,7 @@ function App() {
             </div>
             <div className="header-links">
                 <a href="cart.html">Cart</a>
-                {
-                    userInfo ? <Link to="/profile">{userInfo.name}</Link>:
-
-                    <Link to="/Signin" />
-                }
+                <Link to="/Signin">Sign In</Link>
                 
             </div>
         </header>

@@ -15,7 +15,7 @@ router.post('/signin', async (req, res) => {
             name: signinUser.name,
             email: signinUser.email,
             isAdmin: signinUser.isAdmin,
-            token: getToken(signinUser)
+           // token: getToken(signinUser)
         })
     } else {
         res.status(401).send({message:'Invalid email or password!'});
@@ -25,9 +25,9 @@ router.post('/signin', async (req, res) => {
 router.get("/createadmin", async (req, res) => {
     try {
         const user = new User( {
-            name: 'Sofie',
-            email: 'sofie.morling@gmail.com',
-            password: '1122',
+            name: 'ebba',
+            email: 'ebbamorling@hotmail.se',
+            password: '92091511',
             isAdmin: true
         });
 

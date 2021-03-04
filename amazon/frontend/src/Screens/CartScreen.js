@@ -9,6 +9,9 @@ function CartScreen(props) {
     const {cartItems} = cart;
 
     const productId = props.match.params.id;
+    const plusButton = document.getElementById('plusButton');
+    const minusButton = document.getElementById('minusButton');
+    const inputField = document.getElementById('input');
     const qty = props.location.search? Number(props.location.search.split("=")[1]):1;
     const dispatch = useDispatch();
     const removeFromCartHandler = (productId) => {
@@ -65,6 +68,15 @@ function CartScreen(props) {
                                     <button type="button" className="button" onClick={() => removeFromCartHandler(item.product)}>
                                         Delete
                                     </button>
+                                </div>
+                                <div>
+                                    Quantity:
+                                    <button id="minusButton" onClick = {() => removeFromCartHandler(item.product)}>-</button>
+                                    
+                                    <input type="input" value= {item.qty} id= "input"></input>
+                                    
+                                    <button id="plusButton" onClick = {() => dispatch(addToCart(item.product.value))}>+</button>
+                
                                 </div>
                             </div>
                             <div className="cart-price">

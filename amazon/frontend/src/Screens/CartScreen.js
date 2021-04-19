@@ -75,7 +75,8 @@ function CartScreen(props) {
                                     
                                     <input type="input" value= {item.qty} id= "input"></input>
                                     
-                                    <button id="plusButton" onClick = {() => dispatch(addToCart(item.product.value))}>+</button>
+                                    <button id="plusButton"value={item.qty} onClick = {(e) => dispatch(addToCart(item.product, e.target.value++))}>+
+                                    </button>
                 
                                 </div>
                             </div>

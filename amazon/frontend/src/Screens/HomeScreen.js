@@ -1,41 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
+import { BrowserRouter , Route } from 'react-dom'
 import { Link } from 'react-router-dom';
 
-import { useDispatch, useSelector } from 'react-redux';
-import { listProducts } from '../actions/productActions';
 
-function HomeScreen (props) {
-
-    
-    const productList = useSelector(state => state.productList);
-    const { products, loading, error } = productList;
-    const dispatch = useDispatch();
-
-    useEffect(() => {
-        dispatch(listProducts());
-        return () => {
-            //
-        };
-    }, [])
-    
-    return loading ? <div>Loading...</div> :
-    error ? <div>{error}</div> :
-    <ul className="products">
-    {
-      products.map(product => 
-        <li key={product._id}>
-          <div className="product">
-              <Link to={'/product/' + product._id}>
-              <img className="product-image" src={product.image} alt="product"/>
-              </Link>
-              <div className="product-name">
-      <Link to={'./product/' + product._id}>{product.name}</Link>
-                  </div>
-      <div className="product-price">{product.price} Coins</div>
-          </div>
-      </li>)
-    }
-      
-   </ul>
+const HomeScreen = () => {
+  return (
+    <div>
+      <header className="App-header">
+        <Link to="/Signin">Sign In</Link>
+        <Link className="header-about">About us</Link>
+        <Link to="Shop" className="header-shop">Shop</Link>
+        <Link to="/Cart" className="header-cart">Cart</Link>
+        </header>
+    </div>
+  )
 }
-export default HomeScreen;
+
+export default HomeScreen

@@ -7,9 +7,9 @@ const HomeScreen = () => {
   return (
     <div>
       <header className="App-header">
-        <Link to="/Signin">Sign In</Link>
-        <Link className="header-about">About us</Link>
-        <Link to="Shop" className="header-shop">Shop</Link>
+        <Link to="/Shopping" className="header-shop">Shopping</Link>
+        <Link to="/about us"className="header-about">About us</Link>
+        <Link to="/Signin" className="header-sign in">Sign In</Link>
         <Link to="/Cart" className="header-cart">Cart</Link>
         </header>
     </div>

@@ -5,14 +5,14 @@
 }
 html {
   font-size: 62.5%; 
-  box-sizing: border-box;
+  background-color: rgb(131, 197, 235);
 }
 body {
   
   font-family: 'helvetica', cursive;
   height: 100vh;
   margin: 0;
-  background-image: linear-gradient(rgb(130, 163, 211), rgb(184, 212, 223));
+  
 }
 button {
   font-size: 1.5rem;
@@ -245,29 +245,103 @@ input{
   border-radius: .5rem;
 }
 /*Home page */
-.App {
-  background-image: linear-gradient(rgb(59, 126, 228), rgb(134, 188, 209) );
-}
+
+
 .headerText {
   display: inline-block;
-  font-size: 60px;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: italic;
 }
 .App-header {
-  background-color: rgb(153, 211, 238);
+  background-color: rgb(200, 216, 223);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 60px;
 }
 .header-about {
   display: inline-block;
+  font-size: 20px;
   
 }
 .header-shop {
   display: inline-block;
+  font-size: 20px;
+  padding-left: 600px;
 }
 .header-cart {
  display: inline-block;
+ font-size: 20px;
+ padding-right: 60px;
+}
+.header-signin {
+  font-size: 20px;
+  }
+ 
+/*IMG Body*/
 
+.containBody {
+  display: flex;
+  margin-left: 35px;
+}
+.containBodyTwo {
+  display: flex;
+  
+
+}
+.pic-1 {
+  height: 500px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  padding-top: 40px;
+  padding-left: 50px;
+}
+.pic-2 {
+  height: 300px;
+  display: inline-block;
+  padding-left: 80px;
+  padding-top: 42px;
+  filter: brightness(90%);
+}
+.pic-7 {
+  display: inline-block;
+  height: 152px;
+  padding-left: 80px;
+  margin-top: 45px;
+  filter: brightness(85%);
+}
+
+.pic-8 {
+  width: 370px;
+  padding-left: 20px;
+  margin-left: 65px;
+  padding-top: 50px;
+  
+}
+.pic-9 {
+  padding-top: 50px;
+  height: 450px;
+  width: 270px;
+  filter: brightness(85%);
+  padding-left: 20px;
+  margin-left: 70px;
+}
+.pic-6 {
+  height: 450px;
+  width: 385px;
+  filter: brightness(85%);
+  margin-left: 22px;
+  padding-left: 60px;
+  padding-top: 50px;
+  
+}
+/* text on pic */
+.pic-text {
+  position: absolute;
+  left: 370px;
+  bottom: 260px;
+  font-size: 13px;
+  overflow-wrap: break-word;
+  word-break: break-all;
 }

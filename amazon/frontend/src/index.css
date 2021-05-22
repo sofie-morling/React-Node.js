@@ -9,7 +9,7 @@ html {
 }
 body {
   
-  font-family: 'helvetica', cursive;
+  font-family: serif, Garamond;
   height: 100vh;
   margin: 0;
   
@@ -63,11 +63,13 @@ a:hover {
   color: rgb(245, 245, 245);
 }
 /* Shopping screen */
+
 .products {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 70px;
 }
 .products li {
   list-style-type: none;
@@ -171,6 +173,7 @@ flex-direction: column;
   flex-wrap: wrap;
   margin: 1rem;
   align-items: flex-start;
+  margin-top: 90px;
 }
 .cart-list {
   flex: 3 1 60rem;
@@ -223,6 +226,7 @@ flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+  margin-top: 80px;
 }
 .form-container {
   display: flex;
@@ -244,7 +248,7 @@ input{
   border: .1rem grey solid;
   border-radius: .5rem;
 }
-/*Home page */
+/*Header */
 
 
 .headerText {
@@ -258,6 +262,12 @@ input{
   justify-content: space-between;
   align-items: center;
   height: 60px;
+ margin-top: 40px;
+}
+.header-home {
+  display: inline-block;
+  font-size: 20px;
+  padding-left: 700px;
 }
 .header-about {
   display: inline-block;
@@ -267,7 +277,7 @@ input{
 .header-shop {
   display: inline-block;
   font-size: 20px;
-  padding-left: 600px;
+  padding-left: 10px;
 }
 .header-cart {
  display: inline-block;
@@ -278,11 +288,12 @@ input{
   font-size: 20px;
   }
  
-/*IMG Body*/
+/*Home page*/
 
 .containBody {
   display: flex;
   margin-left: 35px;
+  padding-top: 50px;
 }
 .containBodyTwo {
   display: flex;
@@ -336,7 +347,6 @@ input{
   padding-top: 50px;
   
 }
-/* text on pic */
 .pic-text {
   position: absolute;
   left: 370px;
@@ -344,4 +354,26 @@ input{
   font-size: 13px;
   overflow-wrap: break-word;
   word-break: break-all;
+}
+/*AboutUs Screen */
+.pic-10 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 350px;
+  margin-top: 70px;
+  display: block;
+  }
+
+.text-one {
+  font-size: 20px;
+  margin-top: 25px;
+  float: left;
+
+}
+.text-two {
+  font-size: 20px;
+  margin-top: 25px;
+  float: left;
+  margin-left: 100px;
 }

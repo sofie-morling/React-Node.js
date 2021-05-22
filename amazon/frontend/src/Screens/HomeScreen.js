@@ -6,12 +6,7 @@ import { Link } from 'react-router-dom';
 const HomeScreen = () => {
   return (
     <div className="home-main">
-      <header className="App-header">
-        <Link to="/Shopping" className="header-shop">Shopping</Link>
-        <Link to="/about us"className="header-about">About us</Link>
-        <Link to="/Signin" className="header-signin">Sign In</Link>
-        <Link to="/Cart" className="header-cart">Cart</Link>
-        </header>
+      
 
         <div className="containBody">
             <img className="pic-1" src="/images/Bild1.jpg" alt="drinks" />

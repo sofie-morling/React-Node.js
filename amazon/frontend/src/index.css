@@ -314,13 +314,17 @@ input{
   padding-left: 80px;
   padding-top: 42px;
   filter: brightness(90%);
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  position: relative;
 }
 .pic-7 {
   display: inline-block;
   height: 152px;
   padding-left: 80px;
-  margin-top: 45px;
   filter: brightness(85%);
+  margin-top: 45px;
 }
 
 .pic-8 {
@@ -355,6 +359,11 @@ input{
   overflow-wrap: break-word;
   word-break: break-all;
 }
+:hover.pic-2 {
+  opacity: 0.3;
+}
+
+
 /*AboutUs Screen */
 .pic-10 {
   margin-left: auto;
@@ -364,16 +373,31 @@ input{
   margin-top: 70px;
   display: block;
   }
+.pic-11 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 350px;
+  display: block;
+}
+.aboutUs-headText {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
 
 .text-one {
   font-size: 20px;
   margin-top: 25px;
   float: left;
+  width: 30%;
+  margin-left: 250px;
 
 }
 .text-two {
   font-size: 20px;
   margin-top: 25px;
-  float: left;
-  margin-left: 100px;
+  float: right;
+  width: 30%;
+  margin-right: 250px;
 }

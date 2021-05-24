@@ -35,6 +35,7 @@ function ShopScreen (props) {
                   </div>
       <div className="product-price">{product.price} Coins</div>
           </div>
+         
       </li>)
     }
       

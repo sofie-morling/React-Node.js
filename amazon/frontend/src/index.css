@@ -12,8 +12,8 @@ body {
   font-family: serif, Garamond;
   height: 100vh;
   margin: 0;
-  
-}
+  }
+
 button {
   font-size: 1.5rem;
 }
@@ -84,6 +84,8 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  margin-left: 50px;
+  
 }
 .product-name {
   font-size: 2rem;
@@ -96,10 +98,12 @@ a:hover {
 .product-price {
   font-size: 2rem;
   font-weight: bold;
+  margin-bottom: 30px;
 }
 .product-image {
   max-width: 34rem;
   max-height: 34rem;
+  filter: brightness(90%);
 }
 
 
@@ -116,10 +120,14 @@ a:hover {
 }
 .details-image img {
   max-width: 60rem;
-  width: 100%;
+  width: 50%;
+  margin-top: 30px;
+  margin-left: 200px;
+  filter: brightness(90%);
 }
 .details-info {
   flex: 1 1 30rem;
+  margin-top: 50px;
 }
 .details-action {
   flex: 1 1 30rem;
@@ -132,6 +140,7 @@ a:hover {
 }
 .details-info li, .details-action li {
   margin-bottom: 2rem;
+  margin-right: 30px;
 }
 .back-to-coctails {
   padding: 1rem;
@@ -142,6 +151,8 @@ a:hover {
   border-radius: 0.5rem;
   background-color: lightskyblue;
   padding: 1rem;
+  margin-top: 50px;
+  margin-right: 30px;
 }
 .details-action ul li:last-child {
 display: flex;
@@ -257,7 +268,7 @@ input{
   font-style: italic;
 }
 .App-header {
-  background-color: rgb(200, 216, 223);
+  background-color: rgb(222, 226, 231);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -294,19 +305,32 @@ input{
   display: flex;
   margin-left: 35px;
   padding-top: 50px;
+  align-items: center;
 }
 .containBodyTwo {
   display: flex;
-  
-
 }
+@media (max-width: 600px) {
+  .containBody,
+  .containBodyTwo {
+    flex-direction: column;
+  }
+  .pic-text {
+    font-size: 50px;
+    top: 20%;
+    left: 20%;
+  }
+}
+
+
 .pic-1 {
   height: 500px;
   position: relative;
-  display: inline-block;
-  text-align: center;
+  
   padding-top: 40px;
   padding-left: 50px;
+  border: 9rem white;
+  border-radius: 10rem;
 }
 .pic-2 {
   height: 300px;
@@ -353,17 +377,14 @@ input{
 }
 .pic-text {
   position: absolute;
-  left: 370px;
-  bottom: 260px;
-  font-size: 13px;
-  overflow-wrap: break-word;
-  word-break: break-all;
+  font-size: 17px;
+  top: 30%;
+  left: 30%;
+  
 }
 :hover.pic-2 {
   opacity: 0.3;
 }
-
-
 /*AboutUs Screen */
 .pic-10 {
   margin-left: auto;

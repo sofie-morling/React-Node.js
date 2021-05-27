@@ -15,12 +15,11 @@ const HomeScreen = () => {
              <p>consectetur adipiscing elit,</p> 
              <p>sed do eiusmod tempor incididunt ut labore</p> <p>et dolore magna aliqua.</p>
              <p>Ut enim ad minim veniam,</p> 
-             <p>quis nostrud exercitation ullamco laboris </p> <p>nisi ut aliquip ex ea commodo consequat.</p> 
-             Duis aute irure dolor in reprehenderit in voluptate <p>velit esse cillum dolore eu fugiat nulla pariatur.</p> 
              </div>
         
             <div>
                  <img className="pic-2" src="/images/Bild4.jpg" alt="bluedrink" />
+
                  <img className="pic-7" src="/images/Bild7.jpg" alt="fastDilevry"/>
             </div>
             </div>

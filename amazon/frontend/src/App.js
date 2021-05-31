@@ -15,6 +15,7 @@ function App() {
     <div className="grid-container">
       
     <header className="App-header">
+        <h1 className="header-name">CocktailShop</h1>
         <Link to="/" className="header-home">Home</Link>
         <Link to="/Shopping" className="header-shop">Shopping</Link>
         <Link to="/aboutus"className="header-about">About us</Link>

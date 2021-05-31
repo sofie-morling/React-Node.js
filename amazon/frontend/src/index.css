@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 html {
   font-size: 62.5%; 
@@ -11,7 +11,7 @@ body {
   
   font-family: serif, Garamond;
   height: 100vh;
-  margin: 0;
+  margin: 0 auto;
   }
 
 button {
@@ -47,6 +47,8 @@ button {
 .main {
   grid-area: main;
 }
+
+/*Footer */
 .footer {
   grid-area: footer;
   background-color: cornflowerblue;
@@ -54,6 +56,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 a {
   text-decoration: none;
@@ -261,19 +264,14 @@ input{
 }
 /*Header */
 
-
-.headerText {
-  display: inline-block;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-style: italic;
-}
 .App-header {
   background-color: rgb(222, 226, 231);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 100%;
  margin-top: 40px;
+ width: 100%;
 }
 .header-home {
   display: inline-block;
@@ -283,7 +281,6 @@ input{
 .header-about {
   display: inline-block;
   font-size: 20px;
-  
 }
 .header-shop {
   display: inline-block;
@@ -300,37 +297,100 @@ input{
   }
  
 /*Responsive code */
-@media (min-width: 200px) and (max-width: 400px) {
+/*@media (min-width: 200px) and (max-width: 299px) {
   .containBody,
   .containBodyTwo {
     flex-direction: column;
+  }
+  .App-header {
+    align-items: flex-start;
+    width: 40%;
+  }
+  footer {
+    width: 40%;
+  }
+  .pic-1,
+  .pic-2,
+  .pic-7,
+  .pic-8,
+  .pic-9,
+  .pic-6 {
+    width: 20%;
+  }
+}
+*/
+@media (min-width: 250px) and (max-width: 600px) {
+  .containBody {
+    flex-direction: column;
     margin-left: -15px;
   }
+  .containBodyTwo {
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  .App-header {
+    flex-direction: column;
+    width: 100%;
+    height: 380%;
+    
+  }
+  .header-name {
+    font-weight: 900;
+    font-size: 300%;
+  }
+  .header-cart {
+    padding-left: 70px;
+  }
   .pic-text {
-    font-size: 30px;
-    padding-top: 50px;
-    margin-left: 150px;
+    font-size: 30%;
+    padding-top: 250px;
+    margin-left: 110px;
   }
   .header-home,
   .header-shop,
-  .header-cart,
   .header-about,
   .header-signin {
-    width: 10px;
+    
     padding-left: 10px;
   }
   .pic-1 {
-    width: 500px;
+    width: 90%;
     height: auto;
-    right: 80px;
-    }
-  .App-header {
-      width: 500px;
-    }
+    margin-top: 150px;
+  }
+  .pic-2 {
+    width: 90%;
+    height: auto;
+    margin-top: 10px;
+  }
+  .pic-7 {
+    width: 90%;
+    height: auto;
+    margin-top: 150px;
+  }
+  .pic-8 {
+    width: 90%;
+    height: auto;
+    margin-top: 10px;
+  }
+  .pic-9 {
+    width: 90%;
+    height: auto;
+    margin-top: 10px;
+    
+  }
+  .pic-6 {
+    width: 90%;
+    height: auto;
+    margin-top: 10px;
+    
+  }
+  
   footer {
-      width: 500px;
+      width: 100%;
     }
 }
+/*
 @media (min-width: 401px) and (max-width: 499px) {
   .pic-text {
     font-size: 90px;
@@ -400,7 +460,7 @@ input{
     
   }
 }
-
+*/
 /*Home page*/
 
 .containBody {
@@ -415,7 +475,6 @@ input{
 .pic-1 {
   height: 500px;
   position: relative;
-  
   padding-top: 40px;
   padding-left: 50px;
   border: 9rem white;

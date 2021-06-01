@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
     return (
-        <div>
+        <div className="aboutus-body">
             <div>
                 <img className="pic-10" src="/images/Bild10.jpg" alt="barOnOcean" />
             </div>

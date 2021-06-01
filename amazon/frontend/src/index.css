@@ -322,7 +322,7 @@ input{
 @media (min-width: 250px) and (max-width: 600px) {
   .containBody {
     flex-direction: column;
-    margin-left: -15px;
+    padding-right: 10%;
   }
   .containBodyTwo {
     flex-direction: column;
@@ -343,8 +343,11 @@ input{
   }
   .pic-text {
     font-size: 30%;
-    padding-top: 250px;
-    margin-left: 110px;
+    padding-top: 30%;
+    padding-right: 30%;
+    margin-left: 19%;
+    
+
   }
   .header-home,
   .header-shop,
@@ -354,7 +357,7 @@ input{
     padding-left: 10px;
   }
   .pic-1 {
-    width: 90%;
+    width: 95%;
     height: auto;
     margin-top: 150px;
   }
@@ -389,6 +392,26 @@ input{
   footer {
       width: 100%;
     }
+
+  .products {
+    padding-top: 30%;
+    padding-right: 10%;
+  }
+  .pic-10 {
+    padding-top: 15%;
+    width: 20px;
+    height: auto;
+  }
+  .aboutus-body {
+    padding-top: 24%;
+    
+  }
+  .form {
+    padding-top: 40%;
+  }
+  .cart {
+    padding-top: 40%;
+  }
 }
 /*
 @media (min-width: 401px) and (max-width: 499px) {
@@ -534,39 +557,43 @@ input{
   opacity: 0.3;
 }
 /*AboutUs Screen */
+
+.aboutus-body {
+  align-items: center;
+}
 .pic-10 {
   margin-left: auto;
   margin-right: auto;
-  width: 800px;
-  height: 350px;
-  margin-top: 70px;
+  width: 60%;
+  height: 40%;
+  margin-top: 5%;
   display: block;
   }
 .pic-11 {
   margin-left: auto;
   margin-right: auto;
-  width: 800px;
-  height: 350px;
+  width: 65%;
+  height: 35%;
   display: block;
 }
 .aboutUs-headText {
-  font-size: 40px;
+  font-size: 400%;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 1%;
 }
 
 .text-one {
-  font-size: 20px;
-  margin-top: 25px;
+  font-size: 200%;
+  margin-top: 2%;
   float: left;
   width: 30%;
-  margin-left: 250px;
+  margin-left: 20%;
 
 }
 .text-two {
-  font-size: 20px;
-  margin-top: 25px;
+  font-size: 200%;
+  margin-top: 2%;
   float: right;
   width: 30%;
-  margin-right: 250px;
+  margin-right: 20%;
 }

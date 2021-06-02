@@ -503,6 +503,9 @@ input{
   border: 9rem white;
   border-radius: 10rem;
 }
+.containPic-2 {
+  position: relative;
+}
 .pic-2 {
   height: 300px;
   display: inline-block;
@@ -512,8 +515,31 @@ input{
   opacity: 1;
   transition: .5s ease;
   backface-visibility: hidden;
-  position: relative;
 }
+:hover.pic-2 {
+  opacity: 0.3;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.containPic-2:hover .middle {
+  opacity: 1;
+}
+.textPic-2 {
+  background-color: #236794;
+  color: white;
+  font-size: 200%;
+  padding: 15px 40px;
+  margin-left: 35%;
+}
+
 .pic-7 {
   display: inline-block;
   height: 152px;
@@ -524,10 +550,39 @@ input{
 
 .pic-8 {
   width: 370px;
+  height: 450px;
   padding-left: 20px;
   margin-left: 65px;
   padding-top: 50px;
-  
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  }
+.middle-8 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.containPic-8 {
+  position: relative;
+}
+.textpic-8 {
+  background-color: #236794;
+  color: white;
+  font-size: 200%;
+  padding: 16px 32px;
+  margin-left: 35%;
+}
+.containPic-8:hover .pic-8 {
+  opacity: 0.3;
+}
+.containPic-8:hover .middle-8 {
+  opacity: 1;
 }
 .pic-9 {
   padding-top: 50px;
@@ -536,7 +591,38 @@ input{
   filter: brightness(85%);
   padding-left: 20px;
   margin-left: 70px;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
+.containPic-9 {
+  position: relative;
+}
+.middle-9 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.textpic-9 {
+  background-color: #236794;
+  color: white;
+  font-size: 200%;
+  padding: 20px 80px;
+  padding-left: 10%;
+  margin-left: 50%;
+}
+.containPic-9:hover .pic-9 {
+  opacity: 0.3;
+}
+.containPic-9:hover .middle-9 {
+  opacity: 1;
+}
+
 .pic-6 {
   height: 450px;
   width: 385px;
@@ -544,7 +630,35 @@ input{
   margin-left: 22px;
   padding-left: 60px;
   padding-top: 50px;
-  
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  }
+.containPic-6 {
+    position: relative;
+  }
+.middle-6 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.textPic-6{
+  background-color: #236794;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  margin-left: 30%;
+}
+.containPic-6:hover .pic-6 {
+  opacity: 0.3;
+}
+.containPic-6:hover .middle-6 {
+  opacity: 1;
 }
 .pic-text {
   position: absolute;
@@ -552,9 +666,6 @@ input{
   top: 30%;
   left: 30%;
   
-}
-:hover.pic-2 {
-  opacity: 0.3;
 }
 /*AboutUs Screen */
 
